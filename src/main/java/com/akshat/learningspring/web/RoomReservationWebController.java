@@ -14,7 +14,7 @@ import java.util.Date;
 import java.util.List;
 
 @Controller
-@RequestMapping("reservations")
+@RequestMapping("/reservations")
 public class RoomReservationWebController {
     private final ReservationService reservationService;
 

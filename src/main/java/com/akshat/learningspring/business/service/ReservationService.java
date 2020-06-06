@@ -49,4 +49,12 @@ public class ReservationService {
         }
         return roomReservations;
     }
+
+    public List<Room> getAllRooms() {
+        Iterable<Room> rooms = this.roomRepository.findAll();
+        List<Room> roomList = new ArrayList<>();
+        rooms.forEach(roomList::add);
+        roomList.sort((o1, o2) -> o1.getRoomNumber().compareTo(o2.getRoomNumber()));
+        return roomList;
+    }
 }

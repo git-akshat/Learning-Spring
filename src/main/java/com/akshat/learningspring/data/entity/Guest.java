@@ -23,7 +23,7 @@ public class Guest {
     private String lastName;
 
     @Column(name = "EMAIL_ADDRESS")
-    private String emailAddress;
+    private String email;
 
     @Column(name = "ADDRESS")
     private String address;
