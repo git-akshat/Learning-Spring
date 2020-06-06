@@ -7,15 +7,11 @@ import com.akshat.learningspring.data.entity.Room;
 import com.akshat.learningspring.data.repository.GuestRepository;
 import com.akshat.learningspring.data.repository.ReservationRepository;
 import com.akshat.learningspring.data.repository.RoomRepository;
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Getter
-@Setter
 @Service
 public class ReservationService {
     private final RoomRepository roomRepository;
@@ -48,7 +44,7 @@ public class ReservationService {
             roomReservation.setLastName(guest.getLastName());
         });
         List<RoomReservation> roomReservations = new ArrayList<>();
-        for(Long id : roomReservationMap.keySet()) {
+        for (Long id : roomReservationMap.keySet()) {
             roomReservations.add(roomReservationMap.get(id));
         }
         return roomReservations;
