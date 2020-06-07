@@ -1,4 +1,4 @@
-package com.akshat.learningspring;
+package com.akshat.learningspring.utils;
 
 import java.text.DateFormat;
 import java.text.ParseException;

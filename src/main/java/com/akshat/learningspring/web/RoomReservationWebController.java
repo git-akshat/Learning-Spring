@@ -1,6 +1,6 @@
 package com.akshat.learningspring.web;
 
-import com.akshat.learningspring.DateUtils;
+import com.akshat.learningspring.utils.DateUtils;
 import com.akshat.learningspring.business.domain.RoomReservation;
 import com.akshat.learningspring.business.service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;

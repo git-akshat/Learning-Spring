@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.akshat.learningspring.DateUtils;
+import com.akshat.learningspring.utils.DateUtils;
 import com.akshat.learningspring.business.domain.RoomReservation;
 import com.akshat.learningspring.business.service.ReservationService;
 import org.junit.Test;
